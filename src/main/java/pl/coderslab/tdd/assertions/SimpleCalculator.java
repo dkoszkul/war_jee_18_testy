@@ -13,13 +13,4 @@ public class SimpleCalculator {
 			return x + y;
 		}
 	}
-
-	public int eval(String expression) {
-		String[] split = expression.split("\\+");
-		int result = 0;
-		for (String a : split ) {
-			result += Integer.parseInt(a);
-		}
-		return result;
-	}
 }

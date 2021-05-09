@@ -63,11 +63,4 @@ public class SimpleCalculatorTest{
         // when
         new SimpleCalculator().addPositve(a,b);
     }
-
-    @Test
-    public void evaluatesExpression() {
-        SimpleCalculator calculator = new SimpleCalculator();
-        int sum = calculator.eval("1+2+3");
-        assertEquals(6, sum);
-    }
 }

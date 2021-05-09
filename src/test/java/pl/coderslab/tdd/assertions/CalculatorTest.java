@@ -3,6 +3,7 @@ package pl.coderslab.tdd.assertions;
 import org.junit.Test;
 
 import static org.hamcrest.CoreMatchers.is;
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertThat;
 
 public class CalculatorTest {
@@ -97,4 +98,10 @@ public class CalculatorTest {
         assertThat(result, is(false));
     }
 
+    @Test
+    public void evaluatesExpression() {
+        Calculator calculator = new Calculator();
+        int sum = calculator.eval("1+2+3");
+        assertEquals(6, sum);
+    }
 }

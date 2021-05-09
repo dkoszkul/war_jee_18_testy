@@ -11,13 +11,10 @@ public class FactorsTest {
 
     @Test
     public void shouldGeneratePrimeFactors() {
-        // given
-
-
         // when
         List<Integer> integers = Factors.generatePrimeFactors(10);
 
         // then
-        assertThat(integers, is(List.of(1, 2, 7, 10)));
+        assertThat(integers, is(List.of(1, 2, 5, 10)));
     }
 }
